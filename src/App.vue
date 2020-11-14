@@ -1,11 +1,16 @@
 <template>
-  <div>
-  略略略
-    <a href="#">啦啦啦啦</a>
-  </div>
+   <Tabbar></Tabbar>
   <router-view/>
 </template>
-
+<script>
+  import Tabbar from "./components/common/tabbar/Tabbar";
+  export default {
+    name:'App',
+    components:{
+      Tabbar
+    }
+  }
+</script>
 <style>
 @import "assets/css/base.css";
 </style>
